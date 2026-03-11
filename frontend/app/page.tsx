@@ -17,7 +17,7 @@ type Goal = {
 export default function Home() {
   const [goals, setGoals] = useState<Goal[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+ const [error, setError] = useState<string | null>(null);
   const [bestStreak, setBestStreak] = useState(0);
 
   const fetchGoals = useCallback(async () => {
