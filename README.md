@@ -1,4 +1,4 @@
-[# 🎯 Student Consistency & Streak Tracker
+# 🎯 Student Consistency & Streak Tracker
 
 ## Live Demo
 
