@@ -1,4 +1,4 @@
-const API = "https://goalstreaktracker-production.up.railway.app/";
+const API = "https://goalstreaktracker-production.up.railway.app";
 
 export async function getGoals() {
   const res = await fetch(`${API}/goals`);
