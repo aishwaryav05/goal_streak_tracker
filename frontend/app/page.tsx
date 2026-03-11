@@ -6,8 +6,16 @@ import GoalCard from "../components/GoalCard";
 import CreateGoalForm from "../components/CreateGoalForm";
 import DashboardStats from "../components/DashboardStats";
 
+type Goal = {
+  id: number;
+  title: string;
+  description: string;
+  is_active?: boolean;
+  completed_today?: boolean;
+};
+
 export default function Home() {
-  const [goals, setGoals] = useState([]);
+  const [goals, setGoals] = useState<Goal[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [bestStreak, setBestStreak] = useState(0);
@@ -17,7 +25,7 @@ export default function Home() {
       const data = await getGoals();
       setGoals(data);
       const streaks = await Promise.all(
-        data.map(async (goal) => {
+        data.map(async (goal: Goal) => {
           try {
             const result = await getStreak(goal.id);
             return result.current_streak ?? 0;
