@@ -1,4 +1,8 @@
-# 🎯 Student Consistency & Streak Tracker
+[# 🎯 Student Consistency & Streak Tracker
+
+## Live Demo
+
+https://goalstreaktracker.vercel.app
 
 ## 📸 Dashboard Preview
 
@@ -145,3 +149,4 @@ This project demonstrates:
 • Advanced streak analytics
 • GitHub-style activity heatmap
 • Mobile responsive design
+](https://goalstreaktracker.vercel.app/)
