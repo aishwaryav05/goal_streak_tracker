@@ -1,7 +1,5 @@
 # 🎯 Student Consistency & Streak Tracker
 
-# 🎯 Student Consistency & Streak Tracker
-
 ## 📸 Dashboard Preview
 
 ![Dashboard](screenshots/dashboard.png)
